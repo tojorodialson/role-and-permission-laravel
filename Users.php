@@ -12,9 +12,7 @@ class Users extends Authenticatable {
     use Notifiable, HasPermissionsTrait;
 
     protected $table = 'users';
-
-    protected $keyType = 'string';
-
+    
     protected $fillable = ['username', 'email', 'password', 'created_at', 'updated_at'];
 
     protected $hidden = ['password', 'code', 'remember_token', 'token'];
